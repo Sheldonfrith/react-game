@@ -202,15 +202,10 @@ var createModel = function (element, modelID) {
       importElement.setAttribute(attributes[attribute][0],attributes[attribute][1]);
     });
     element.replaceWith(importElement);
-    var buttonElement = document.createElement("button");
-    buttonElement.setAttribute("class", "sharpar-button");
-    buttonElement.setAttribute("slot", "ar-button");
-    var buttonText = document.createTextNode("View in Augmented Reality");
-    buttonElement.appendChild(buttonText);
-    importElement.appendChild(buttonElement);
+    return importElement;
   };
 
-createModel(
+var mvElement = createModel(
     document.currentScript,
     modelID
   );
@@ -245,6 +240,14 @@ createModel(
   document.querySelector("#model-viewer").addEventListener('load', (event) => {
     //send message, the model has loaded
     if (loadAllow === true){
+      //add the ar button now
+    var buttonElement = document.createElement("button");
+    buttonElement.setAttribute("class", "sharpar-button");
+    buttonElement.setAttribute("slot", "ar-button");
+    var buttonText = document.createTextNode("View in Augmented Reality");
+    mvElement.appendChild(buttonElement);
+    buttonElement
+    buttonElement.appendChild(buttonText);
       eventType = 'model-loaded';
       console.log('model loaded');
       loadAllow = false;
