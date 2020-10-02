@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -24,15 +22,16 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    
-    <!-- <script src="https://sharpar-io.web.app/sharparinit.js"></script> -->
-<!-- <script src="sharparinit.js"></script>
+
+  <title>React App</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+
+  <!-- <script src="https://sharpar-io.web.app/sharparinit.js"></script> -->
+  <!-- <script src="sharparinit.js"></script>
 
     <script
   src="sharparmodel.js"
@@ -41,8 +40,17 @@
   data-alt="A 3D model of a bag"
   gs://sharpar-io.appspot.com/authentique_sharpar_model_0101.glb
 ></script> -->
-<script src="modelCurrentDeployReadable.js" model-id="-MI4qeOCl8AYzUlFLxTD"></script>
-<model-viewer src="https://firebasestorage.googleapis.com/v0/b/sharpar-io.appspot.com/o/authentique_sharpar_model_0101.glb?alt=media&token=36e1a9e8-3030-4221-bb21-c23fc33e2b5b" alt="A 3D model of an astronaut" auto-rotate camera-controls></model-viewer>
-<!-- <script src="https://sharpar-io.web.app/model.js" model-id="-MIQG-c9kwK4uKT94KSQ"></script> -->
-  </body>
+  <script src="modelCurrentDeployReadable.js" model-id="-MI4qeOCl8AYzUlFLxTD"></script>
+  <!-- <model-viewer id="model-viewer"
+    src="https://firebasestorage.googleapis.com/v0/b/sharpar-io.appspot.com/o/authentique_sharpar_model_0101.glb?alt=media&amp;token=36e1a9e8-3030-4221-bb21-c23fc33e2b5b"
+    ios-src="https://firebasestorage.googleapis.com/v0/b/sharpar-io.appspot.com/o/authentique_sharpar_model_0101.usdz?alt=media&amp;token=ea3efc9f-a5f1-4041-9ee3-bac6a5ce2e3c"
+    poster="" alt="A 3D model of a blue flat thing" shadow-intensity="1" camera-controls="" interaction-prompt="auto"
+    auto-rotate="" ar="" ar-modes="webxr scene-viewer quick-look" ar-scale="auto" data-js-focus-visible="" ar-status="">
+  </model-viewer> -->
+  <model-viewer src="https://firebasestorage.googleapis.com/v0/b/sharpar-io.appspot.com/o/authentique_sharpar_model_0101.glb?alt=media&amp;token=36e1a9e8-3030-4221-bb21-c23fc33e2b5b" ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto"
+    camera-controls alt="A 3D model of an astronaut"
+    ios-src="../shared-assets/models/Astronaut.usdz"></model-viewer>
+  <!-- <script src="https://sharpar-io.web.app/model.js" model-id="-MIQG-c9kwK4uKT94KSQ"></script> -->
+</body>
+
 </html>
